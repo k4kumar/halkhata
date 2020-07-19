@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = null;
+
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from coderthemes.com/ubold/layouts/material/dashboard-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Aug 2019 13:18:28 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>UBold - Responsive Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/Content/assets/images/favicon.ico">
+
+    <!-- plugin css -->
+    <link href="~/Content/assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+    <!-- App css -->
+    <link href="~/Content/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        @Html.Partial("_Topbar")
+
+        @Html.Partial("_LeftSidebar")
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            @RenderBody()
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- Vendor js -->
+    <script src="~/Content/assets/js/vendor.min.js"></script>
+
+    <!-- Plugins js-->
+    <script src="~/Content/assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="~/Content/assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="~/Content/assets/libs/jquery-vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+    <!-- Dashboard 2 init -->
+    <script src="~/Content/assets/js/pages/dashboard-2.init.js"></script>
+
+    <!-- App js-->
+    <script src="~/Content/assets/js/app.min.js"></script>
+
+</body>
+
+<!-- Mirrored from coderthemes.com/ubold/layouts/material/dashboard-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Aug 2019 13:18:28 GMT -->
+</html>
